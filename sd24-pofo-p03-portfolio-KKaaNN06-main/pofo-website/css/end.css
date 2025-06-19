@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Algerian', 'Courier', monospace;
+    color: rgb(255, 255, 255);
+  }
+  
+  body {
+    margin: 0;
+    background: url(https://media.istockphoto.com/id/1212789033/tr/foto%C4%9Fraf/denizin-foto%C4%9Fraf-arka-plan-mavi-su.jpg?s=170667a&w=0&k=20&c=CqtIxXTorZzoPWwhXAyywaBK5GoOmSbwFawazVbiDKM=);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #game-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 1.5rem;
+    background-color: rgba(1, 148, 38, 0.8);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .end-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .end-page p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }

@@ -1,0 +1,132 @@
+body {
+    font-family: 'Algerian', 'Courier', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://media.istockphoto.com/id/1212789033/tr/foto%C4%9Fraf/denizin-foto%C4%9Fraf-arka-plan-mavi-su.jpg?s=170667a&w=0&k=20&c=CqtIxXTorZzoPWwhXAyywaBK5GoOmSbwFawazVbiDKM=);
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr  8fr;
+    grid-template-areas:
+      "header header"
+      "spel spel";
+      height: 100vh;
+  }
+  
+  .box-header {
+    grid-area: header;
+    background-image: url(https://media.istockphoto.com/id/1212789033/tr/foto%C4%9Fraf/denizin-foto%C4%9Fraf-arka-plan-mavi-su.jpg?s=170667a&w=0&k=20&c=CqtIxXTorZzoPWwhXAyywaBK5GoOmSbwFawazVbiDKM=);
+  }
+  
+  .box-spel {
+    grid-area: spel;
+    background-image: url(https://media.istockphoto.com/id/1212789033/tr/foto%C4%9Fraf/denizin-foto%C4%9Fraf-arka-plan-mavi-su.jpg?s=170667a&w=0&k=20&c=CqtIxXTorZzoPWwhXAyywaBK5GoOmSbwFawazVbiDKM=);
+    background-size: cover;
+    height: 100%;
+  }
+  
+  h1 {
+    margin: 20px;
+    color: white;
+  }
+  
+  .game-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 20px;
+    height: 80%;
+  }
+  
+  .board {
+    border: 2px solid #333;
+    padding: 10px;
+    background-color: #ffffff;
+    height: 100%;
+    width: 40%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Grotere kolommen */
+    grid-template-rows: repeat(10, 1fr);   /* Grotere rijen */
+    gap: 2px;
+    height: 80%;
+    width: auto;
+  }
+  
+  .grid div {
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+  
+  }
+  
+  .grid div.hit {
+    background-color: red;
+  }
+  
+  .grid div.miss {
+    background-color: rgb(26, 41, 179);
+  }
+  
+  .grid div.player-ship {
+    background-color: lightgreen; /* Maak schepen groen op het spelerbord */
+    border: 1px solid green; /* Geef een extra accent voor duidelijkheid */
+  }
+  
+  .strt {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 3px double;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .strt:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Style for mute button */
+  #muteButton {
+    position: fixed;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Perfectly center the button */
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #muteButton:hover {
+    background-color: rgba(255, 255, 255, 1); /* Slightly increase background opacity on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .game-container {
+      flex-direction: column; /* Zorgt ervoor dat de borden onder elkaar staan op kleinere schermen */
+      gap: 10px;
+    }
+  
+    .board {
+      width: 100%;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(10, 1fr); /* Houdt de kolommen flexibel, zelfs op kleine schermen */
+      grid-template-rows: repeat(10, 1fr);
+    }
+  }

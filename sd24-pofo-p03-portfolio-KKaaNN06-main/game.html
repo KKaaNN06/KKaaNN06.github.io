@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/game.css">
+  <title>ZeeSlag</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box-header">
+      <h1>SeaBattle</h1>
+      <a href="start.html" class="strt">Back</a>
+    </div>
+    <div class="box-spel">
+      <div class="game-container">
+        <div id="player-board" class="board">
+          <h2>Your Board</h2>
+          <div class="grid"></div>
+        </div>
+        <div id="computer-board" class="board">
+          <h2>The Computer Board</h2>
+          <div class="grid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="muteButton">🔊</button>
+  <audio id="seabattleSound" src="sounds/seabattle.mp3" preload="auto"></audio>
+  <script src="js/pofo-website/game.js"></script>
+</body>
+
+</html>
